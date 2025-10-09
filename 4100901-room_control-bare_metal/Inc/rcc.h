@@ -34,6 +34,8 @@ typedef struct {
 } RCC_TypeDef;
 
 #define RCC ((RCC_TypeDef *)0x40021000U)
+#define RCC_AHBSENR  (*(volatile uint32_t*)0x40021014)
+
 
 void rcc_init(void);
 void rcc_syscfg_clock_enable(void);

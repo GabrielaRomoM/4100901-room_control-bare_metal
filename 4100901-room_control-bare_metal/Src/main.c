@@ -22,6 +22,7 @@ static void peripherals_init(void)
     // Configuración de GPIOs
     init_gpio(GPIOA,5,0x01,0x00,0x00,0x00,0); // LED externo
     init_gpio(GPIOB,3,0x01,0x00,0x00,0x00,0); // LD2 (Hearbeat)
+    init_gpio(GPIOC, 13, 0x00,0x00,0x00, 0x00,0); // Button
 
     // Inicialización de periféricos
     init_systick();

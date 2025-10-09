@@ -1,11 +1,9 @@
 #include "rcc.h"
 
-#define RCC_AHB2ENR (*(volatile uint32_t *)(RCC  + 0x4CU)) // Habilita GPIOA clock
-
 void rcc_init(void)
 {
-    RCC_AHB2ENR |= (1 << 0);   // Habilita reloj GPIOA
-    RCC_AHB2ENR |= (1 << 2);  // Habilita reloj GPIOC
+    RCC_AHBSENR |= (1 << 0);   // Habilita reloj GPIOA
+    RCC_AHBSENR |= (1 << 2);  // Habilita reloj GPIOC
 }
 
 // Habilitar reloj para SYSCFG
