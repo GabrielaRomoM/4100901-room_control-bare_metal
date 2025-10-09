@@ -4,7 +4,7 @@
 
 void rcc_init(void)
 {
-    RCC_AHB2ENR |= (1 << 0);                      // Habilita reloj GPIOA
+    RCC_AHB2ENR |= (1 << 0);   // Habilita reloj GPIOA
     RCC_AHB2ENR |= (1 << 2);  // Habilita reloj GPIOC
 }
 
